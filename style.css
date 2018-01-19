@@ -1,0 +1,28 @@
+.root {
+  background-color: pink;
+  display: flex;
+}
+
+.profile-img {
+  max-width: 200px;
+}
+
+.description {
+  padding-left: 10px;
+}
+
+@media screen and (max-width: 780px) {
+  .root {
+    background-color: yellow;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .profile-img {
+    max-width: 600px;
+  }
+  
+  .description {
+    padding-left: 10px;
+  }
+}
