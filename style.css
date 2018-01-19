@@ -1,0 +1,41 @@
+.root {
+  background-color: pink;
+  display: flex;
+}
+
+.profile-img {
+  width: 400px;
+  height: auto;
+}
+
+.description {
+  padding-left: 10px;
+}
+
+/* mobile */
+@media screen and (max-width: 600px) {
+  .root {
+    background-color: yellow;
+    display: flex;
+    flex-direction: column;
+    /* fix after */
+    max-width: 100%; 
+    margin: 0 auto;
+  }
+  
+  .profile-img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .motto {
+    display: none;
+  }
+}
