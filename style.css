@@ -4,25 +4,38 @@
 }
 
 .profile-img {
-  max-width: 200px;
+  width: 400px;
+  height: auto;
 }
 
 .description {
   padding-left: 10px;
 }
 
-@media screen and (max-width: 780px) {
+/* mobile */
+@media screen and (max-width: 600px) {
   .root {
     background-color: yellow;
     display: flex;
     flex-direction: column;
+    /* fix after */
+    max-width: 100%; 
+    margin: 0 auto;
   }
   
   .profile-img {
-    max-width: 600px;
+    width: 100%;
+    height: auto;
   }
   
   .description {
-    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .motto {
+    display: none;
   }
 }
